@@ -41,7 +41,7 @@
   <!-- Navigation -->
   <header class="nav nav--dark nav--always-fixed">
 
-    <div class="nav__holder nav--sticky">
+    <div class="nav__holder nav--sticky nav--align-center">
       <div class="container-fluid container-semi-fluid">
         <div class="flex-parent">
 
@@ -68,22 +68,39 @@
                 <a href="#home">Anasayfa</a>
               </li>
               <li>
-                <a href="#services">Hizmetlerimiz</a>
+                <a href="#process">Bilgiler</a>
               </li>
               <li>
-                <a href="#about-us">Hakkımızda</a>
-              </li>
-              <li>
-                <a href="#portfolio">Çalışmalar</a>
+                <a href="#portfolio">Works</a>
               </li>                         
+              <li>
+                <a href="#services">Doktorumuz</a>
+              </li>
               <li>
                 <a href="#contact">İletişim</a>
               </li>
-              </li>
-
             </ul> <!-- end menu -->
 
-          </nav> <!-- end nav-wrap -->         
+
+            <!-- Mobile Socials -->
+            <div class="nav__mobile-social-icons hidden-lg hidden-md">
+              <div class="socials socials--nobase">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+
+          </nav> <!-- end nav-wrap -->
+
+          <!-- Socials -->
+          <div class="nav__social-icons flex-child hidden-sm hidden-xs">
+            <div class="socials socials--nobase right">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
       
         </div> <!-- end flex-parent -->
       </div> <!-- end container -->
@@ -97,7 +114,7 @@
     <!-- Revolution Slider -->
     <section> 
       <div class="rev_slider_wrapper">
-        <div class="rev_slider" id="slider1" data-version="5.0">
+        <div class="rev_slider" id="slider7" data-version="5.0">
           <ul>
             <!-- SLIDE 1 -->
             <li data-fstransition="fade"
@@ -110,7 +127,7 @@
               data-title="The Art of Design"
               >
               <!-- MAIN IMAGE -->
-              <img src="img/revolution/abideva/slider-1.jpg"
+              <img src="img/revolution/agency_hero.jpg"
                 alt=""
                 data-bgrepeat="no-repeat"
                 data-bgfit="cover"
@@ -118,12 +135,31 @@
                 class="rev-slidebg"
                 >
 
-              <!-- LAYER NR. 1 -->
-              <div class="tp-caption hero-text alt-font nocaps rs-parallaxlevel-8"
-                data-x="center"
-                data-y="center"
-                data-textAlign="center"
-                data-fontsize="[220, 180, 160, 100]"
+              <!-- COLOR OVERLAY -->
+              <div class="tp-caption tp-shape tp-shapewrapper"
+                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                data-width="full"
+                data-height="full"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+                data-transform_out="s:300;s:300;" 
+                data-start="200" 
+                data-basealign="slide" 
+                data-responsive_offset="on" 
+                data-responsive="off"
+                style="z-index: 1; background-color: rgba(79,49,208,.8);"> 
+              </div>
+
+
+              <!-- FRAME -->
+              <div class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-3"
+                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                data-width="[600, 500, 400, 300]"
+                data-height="[430, 330, 260, 200]"
+                data-whitespace="nowrap"
                 data-frames='[{
                   "delay":1000,
                   "speed":900,
@@ -137,23 +173,24 @@
                   "frame":"999",
                   "to":"opacity:0;","ease":"Power3.easeOut"
                 }]'
-                data-splitout="none">fresh<span class="dot">.</span>
+                data-responsive_offset="on" 
+                data-responsive="off"
+                style="z-index: 1; border: 11px solid rgba(255,255,255,.3);"> 
               </div>
 
-              <!-- LAYER NR. 2 -->
-              <div class="tp-caption medium-text rs-parallaxlevel-8"
+
+              <!-- LAYER NR. 1 -->
+              <div class="tp-caption hero-text nocaps rs-parallaxlevel-1"
                 data-x="center"
-                data-y="center"                
-                data-voffset="[135, 135, 135, 90]"
-                data-fontsize="[20, 20, 18, 16]"
+                data-y="center"
+                data-voffset="[-30]"
                 data-textAlign="center"
-                data-width="[none,none,none,400]"
-                data-whitespace="[nowrap, nowrap, nowrap, normal]"
+                data-fontsize="[130, 120, 90, 50]"
                 data-frames='[{
-                  "delay":1200,
+                  "delay":1000,
                   "speed":900,
                   "frame":"0",
-                  "from":"y:150px;opacity:0;",
+                  "from":"sX:0.5;sY:0.5;opacity:0;",
                   "ease":"Power3.easeOut",
                   "to":"o:1;"
                   },{
@@ -162,209 +199,35 @@
                   "frame":"999",
                   "to":"opacity:0;","ease":"Power3.easeOut"
                 }]'
-                >Flexible and Creative. Meet the New Style
+                data-splitout="none">Ab-ı Deva<span class="dot">.</span>
+              </div>
+
+              <!-- LAYER NR. 2 -->
+              <div class="tp-caption medium-text alt-font nocaps rs-parallaxlevel-1"
+                data-x="center"
+                data-y="center"                
+                data-voffset="[100, 60, 50, 20]"
+                data-fontsize="[24, 22, 20, 18]"
+                data-textAlign="center"
+                data-width="[none,none,none,400]"
+                data-whitespace="[nowrap, nowrap, nowrap, normal]"
+                data-frames='[{
+                  "delay":1200,
+                  "speed":900,
+                  "frame":"0",
+                  "from":"sX:0.5;sY:0.5;opacity:0;",
+                  "ease":"Power3.easeOut",
+                  "to":"o:1;"
+                  },{
+                  "delay":"wait",
+                  "speed":1000,
+                  "frame":"999",
+                  "to":"opacity:0;","ease":"Power3.easeOut"
+                }]'
+                >Doğal Tedaviler.
               </div>
         
             </li> <!-- end slide 1 -->
-
-            <!-- SLIDE 2 -->
-            <li data-transition="parallaxtoright"
-              data-easein="default" 
-              data-easeout="default"
-              data-slotamount="1"
-              data-masterspeed="1200"
-              data-delay="8000"
-              data-title="Creative &amp; Emotional"
-              >
-              <!-- MAIN IMAGE -->
-              <img src="img/revolution/abideva/slider-2.jpg"
-                alt=""
-                data-bgrepeat="no-repeat"
-                data-bgfit="cover"
-                data-bgparallax="7"
-                class="rev-slidebg"
-                >
-
-              <!-- LAYER NR. 1 -->
-              <div class="tp-caption medium-text rs-parallaxlevel-8"
-                data-x="center"
-                data-y="center"
-                data-voffset="[-90, -90, -70, -50]"
-                data-fontsize="[20, 20, 18, 16]"
-                data-textAlign="center"
-                data-width="[none,none,none,400]"
-                data-whitespace="[nowrap, nowrap, nowrap, normal]"
-                data-frames='[{
-                  "delay":1000,
-                  "speed":900,
-                  "frame":"0",
-                  "from":"y:150px;opacity:0;",
-                  "ease":"Power3.easeOut",
-                  "to":"o:1;"
-                  },{
-                  "delay":"wait",
-                  "speed":1000,
-                  "frame":"999",
-                  "to":"opacity:0;","ease":"Power3.easeOut"
-                }]'
-                >Start to Build Perfect Website Today
-              </div>
-
-              <!-- LAYER NR. 2 -->
-              <div class="tp-caption hero-text nocaps alt-font rs-parallaxlevel-8"
-                data-x="center"
-                data-y="center"
-                data-fontsize="[95, 75, 55, 30]"
-                data-textAlign="center"
-                data-frames='[{
-                  "delay":1200,
-                  "speed":900,
-                  "frame":"0",
-                  "from":"y:150px;opacity:0;",
-                  "ease":"Power3.easeOut",
-                  "to":"o:1;"
-                  },{
-                  "delay":"wait",
-                  "speed":1000,
-                  "frame":"999",
-                  "to":"opacity:0;","ease":"Power3.easeOut"
-                }]'
-                data-splitout="none">Don’t Wait and Do It Now
-              </div>
-
-              <!-- LAYER NR. 3 -->
-              <div class="tp-caption tp-resizeme rs-parallaxlevel-8"
-                data-x="center"
-                data-y="center"
-                data-hoffset="0"
-                data-voffset="[118, 118, 98, 78]"
-                data-frames='[{
-                  "delay":1400,
-                  "speed":900,
-                  "frame":"0",
-                  "from":"y:150px;opacity:0;",
-                  "ease":"Power3.easeOut",
-                  "to":"o:1;"
-                  },{
-                  "delay":"wait",
-                  "speed":1000,
-                  "frame":"999",
-                  "to":"opacity:0;","ease":"Power3.easeOut"
-                }]'
-                style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='btn btn-lg btn-transparent'>Learn More</a>
-              </div>  
-        
-            </li> <!-- end slide 2 -->
-
-            <!-- SLIDE 3 -->
-            <li data-transition="parallaxtoright"
-              data-easein="default" 
-              data-easeout="default"
-              data-slotamount="1"
-              data-masterspeed="1200"
-              data-delay="8000"
-              data-title="Amazing Agency"
-              >
-              <!-- MAIN IMAGE -->
-              <img src="img/revolution/abideva/slider-4.jpg"
-                alt=""
-                data-bgrepeat="no-repeat"
-                data-bgfit="cover"
-                data-bgparallax="7"
-                class="rev-slidebg"
-                >
-
-              <!-- LAYER NR. 1 -->
-              <div class="tp-caption hero-text"
-                data-x="center"
-                data-y="center"
-                data-fontsize="[95, 75, 55, 30]"
-                data-textAlign="center"
-                data-frames='[{
-                  "delay":1000,
-                  "speed":900,
-                  "frame":"0",
-                  "from":"y:150px;opacity:0;",
-                  "ease":"Power3.easeOut",
-                  "to":"o:1;"
-                  },{
-                  "delay":"wait",
-                  "speed":1000,
-                  "frame":"999",
-                  "to":"opacity:0;","ease":"Power3.easeOut"
-                }]'
-                >Say Hello to Canna
-              </div>
-
-              <!-- LAYER NR. 2 -->
-              <div class="tp-caption medium-text nocaps alt-font"
-                data-x="center"
-                data-y="center"
-                data-voffset="[80, 80, 80, 40]"
-                data-fontsize="[24, 24, 22, 20]"
-                data-textAlign="center"
-                data-frames='[{
-                  "delay":1200,
-                  "speed":900,
-                  "frame":"0",
-                  "from":"y:150px;opacity:0;",
-                  "ease":"Power3.easeOut",
-                  "to":"o:1;"
-                  },{
-                  "delay":"wait",
-                  "speed":1000,
-                  "frame":"999",
-                  "to":"opacity:0;","ease":"Power3.easeOut"
-                }]'
-                >Flexible and Creative. <i>Meet the New Style</i>
-              </div>
-
-              <!-- LAYER NR. 4 -->
-              <div class="tp-caption tp-resizeme"
-                data-x="center"
-                data-y="center"
-                data-voffset="[165, 165, 165, 100]"
-                data-hoffset="-85"
-                data-frames='[{
-                  "delay":1400,
-                  "speed":900,
-                  "frame":"0",
-                  "from":"y:150px;opacity:0;",
-                  "ease":"Power3.easeOut",
-                  "to":"o:1;"
-                  },{
-                  "delay":"wait",
-                  "speed":1000,
-                  "frame":"999",
-                  "to":"opacity:0;","ease":"Power3.easeOut"
-                }]'
-                style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='btn btn-lg btn-white'>Buy it Now</a>
-              </div>
-
-              <!-- LAYER NR. 5 -->
-              <div class="tp-caption tp-resizeme"
-                data-x="center"
-                data-y="center"
-                data-voffset="[165, 165, 165, 100]"
-                data-hoffset="89"
-                data-frames='[{
-                  "delay":1400,
-                  "speed":900,
-                  "frame":"0",
-                  "from":"y:150px;opacity:0;",
-                  "ease":"Power3.easeOut",
-                  "to":"o:1;"
-                  },{
-                  "delay":"wait",
-                  "speed":1000,
-                  "frame":"999",
-                  "to":"opacity:0;","ease":"Power3.easeOut"
-                }]'
-                style="z-index: 13; max-width: auto; max-height: auto; white-space: nowrap;"><a href='#' class='btn btn-lg btn-transparent'>Learn More</a>
-              </div>
-            
-            </li> <!-- end slide 3 -->
-
           </ul>
 
           <div class="local-scroll">
@@ -377,371 +240,262 @@
       </div>
     </section>
 
-    <!-- Intro -->
-    <section class="section-wrap intro pb-0 bg-light" id="intro">
-      <div class="container intro__body wow slideInUp" data-wow-duration="1.2s" data-wow-delay="0s">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 text-center">
-            <span class="subheading">Biz Kimiz?</span>
-            <h2 class="intro__title nocaps">
-            We Provide Awesome Digital Solutions
-            With a Great Attention to Details
-            </h2>
-            <p class="intro__text">
-              Dünyaya, topluma sağlıklı bireyler kazandırmak, bunu yaparken insan sağlığına faydayı esas alarak doğal, geleneksel ve tamamlayıcı bakış açısından yaklaşmak.
-              Aynı zamanda bilimsellikten ödün vermeden, hem hastayı hem de meslektaşlarımızı eğitmek, onlara tecrübelerimi aktarmak.            </p>
+    <!-- Promo Slider -->
+    <section class="section-wrap" id="intro">      
+      <div id="owl-promo" class="owl-carousel owl-theme">
+
+        <div class="promo-slider">
+          <div class="container">
+            <div class="row">              
+              
+              <div class="col-md-4 promo-slider__info">
+                <h3 class="promo-slider__title">Gereksiz İlaç Kullanımını Azaltın</h3>
+                <p class="mb-30">Çeşitli hastalıklardan korunma, teşhis, tedavi ya da vücuttaki herhangi bir işleyişi değiştirme amacıyla kullanılan ilaçlar, doğru amaca yönelik olarak uygun dozda ve uygun sıklıkta kullanılması gereken kimyasal, biyolojik ve bitkisel ürünlerdir. Doğru amaca yönelik olsa dahi gerekli dozdan daha fazla ilaç tüketilmesi, ilacın iyileştirici etkisini yitirmesine ve vücutta büyük hasarların gelişmesine neden olabilir. Belirli bir tedavi için uygulanan ilacın yararlı etkiyi gösterebilmesi ve amaca yönelik tedavinin uygulanabilmesi için Akılcı İlaç Kullanımı ilkelerine uyulması gerekir.</p> 
+                <div class="owl-custom-navigation mt-40 mb-30">
+                  <a class="owl-custom-navigation__prev"><i class="fa fa-angle-left"></i></a>
+                  <a class="owl-custom-navigation__next"><i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+
+              <div class="col-md-7 col-md-offset-1">
+                <img src="img/abideva/slider-4.jpg" alt="" class="img-fullwidth">        
+              </div>
+
+            </div>
           </div>
         </div>
+
+        <div class="promo-slider">
+          <div class="container">
+            <div class="row">              
+              
+              <div class="col-md-4 promo-slider__info">
+                <h3 class="promo-slider__title">Doktor kontrolünde tedavi</h3>
+                <p class="mb-30">Tamamlayıcı tedavinizi uzman doktorumuz gözleminde kişiye özel tedaviler ile size özel olarak uygulanmaktadır.Kurumumuz siz hastalarımıza en iyi şekilde hizmet etmeyi amaçlar</p> 
+                <div class="owl-custom-navigation mt-40">
+                  <a class="owl-custom-navigation__prev"><i class="fa fa-angle-left"></i></a>
+                  <a class="owl-custom-navigation__next"><i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+
+              <div class="col-md-7 col-md-offset-1">
+                <img src="img/abideva/slider-2.jpg" alt="" class="img-fullwidth">        
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
       </div>
-    </section> <!-- end intro -->
+    </section> <!-- end promo slider -->
 
-
-    <!-- Feature 2 -->
-    <section class="section-wrap no-padding" id="services" style="background-image:url(img/sections/services_bg.jpg)">
+    <!-- Result Boxes -->
+    <section>
       <div class="container-fluid no-padding">
-        <div class="row">
+        <div class="row no-gutters">
 
-          <div class="col-md-3 feature-2__wrap">
-            <a href="#" class="feature-2">
-              <div class="feature-2__holder">
-                <i class="feature-2__icon icon icon-tools"></i>
-                <h3 class="feature-2__title">Web Design</h3>
-                <p class="feature-2__text">This theme will save you a lot of time. Packed with amazing features and super flexible for any business.</p>
+          <div class="col-md-4">
+            <div class="result-box result-box--first">
+              <div class="counter">
+                <span class="counter__timer counter__timer--1" data-from="0" data-to="350">&nbps;</span>
+                <span class="counter__text counter__text--1">Tedavi Gören Hastalar</span>         
               </div>
-            </a>
-          </div> <!-- end feature -->
+            </div>
+          </div> <!-- end result -->
 
-          <div class="col-md-3 feature-2__wrap">
-            <a href="#" class="feature-2">
-              <div class="feature-2__holder">
-                <i class="feature-2__icon icon icon-strategy"></i>
-                <h3 class="feature-2__title">Branding</h3>
-                <p class="feature-2__text">This theme will save you a lot of time. Packed with amazing features and super flexible for any business.</p>
+          <div class="col-md-4">
+            <div class="result-box result-box--second">
+              <div class="counter">
+                <span class="counter__timer counter__timer--1" data-from="0" data-to="350">&nbps;</span>
+                <span class="counter__text counter__text--1">Fayda Gören Hastalar</span>         
               </div>
-            </a>
-          </div> <!-- end feature -->
+            </div>
+          </div> <!-- end result -->
 
-          <div class="col-md-3 feature-2__wrap">
-            <a href="#" class="feature-2">
-              <div class="feature-2__holder">
-                <i class="feature-2__icon icon icon-linegraph"></i>
-                <h3 class="feature-2__title">Marketing</h3>
-                <p class="feature-2__text">This theme will save you a lot of time. Packed with amazing features and super flexible for any business.</p>
+          <div class="col-md-4">
+            <div class="result-box result-box--third">
+              <div class="counter">
+                <span class="counter__timer counter__timer--1" data-from="0" data-to="260">&nbps;</span>
+                <span class="counter__text counter__text--1">Bizi Tavsiye Eden Hastalar</span>
               </div>
-            </a>
-          </div> <!-- end feature -->
-
-          <div class="col-md-3 feature-2__wrap">
-            <a href="#" class="feature-2">
-              <div class="feature-2__holder">
-                <i class="feature-2__icon icon icon-lifesaver"></i>
-                <h3 class="feature-2__title">Support</h3>
-                <p class="feature-2__text">This theme will save you a lot of time. Packed with amazing features and super flexible for any business.</p>
-              </div>
-            </a>
-          </div> <!-- end feature -->
+            </div>
+          </div> <!-- end result -->
 
         </div>
       </div>
-    </section> <!-- end feature 2 -->
+    </section> <!-- end result boxes -->
 
-    <!-- Our Team -->
-    <section class="section-wrap pb-0" id="about-us">
-      <div class="container">
-
-        <div class="heading-row text-center">
-          <span class="subheading">Awesome Team</span>
-          <h2 class="heading">We Are Proud to Work</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-sm-4 mb-sm-30 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
-            <div class="team">
-              <img src="img/team/1.jpg" alt="" class="team__img">
-              <div class="team__details">
-                <h5 class="team__title nocaps">Joeby Ragpa</h5>
-                <span class="team__position">CEO of Company</span>
-                <div class="socials socials--rounded mt-20">
-                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                  <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                  <a href="#" class="envelope"><i class="fa fa-envelope"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> <!-- end col -->
-
-          <div class="col-sm-4 mb-sm-30 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-            <div class="team">
-              <img src="img/team/2.jpg" alt="" class="team__img">
-              <div class="team__details">
-                <h5 class="team__title nocaps">Mat Trump</h5>
-                <span class="team__position">Lead Designer</span>
-                <div class="socials socials--rounded mt-20">
-                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                  <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                  <a href="#" class="envelope"><i class="fa fa-envelope"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> <!-- end col -->
-
-          <div class="col-sm-4 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
-            <div class="team">
-              <img src="img/team/3.jpg" alt="" class="team__img">
-              <div class="team__details">
-                <h5 class="team__title nocaps">Clint Marshal</h5>
-                <span class="team__position">Front-End Developer</span>
-                <div class="socials socials--rounded mt-20">
-                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                  <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                  <a href="#" class="envelope"><i class="fa fa-envelope"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> <!-- end col -->
-
-        </div>
-      </div>
-    </section> <!-- end our team -->
-
-    <!-- About us / Progress Bars -->
-    <section class="section-wrap">
+    <!-- Process Tabs -->
+    <section class="section-wrap bg-light" id="process">
       <div class="container">
         <div class="row">
 
-          <div class="col-sm-6">
-            <div class="about-us">
-              <span class="subheading">About Us</span>
-              <h4 class="about-us__title nocaps">10 years on the global market.<br>We work since 2005.</h4>
-              <p class="about-us__text">We possess within us two minds. So far I have written only of the conscious mind. I would now like to introduce you to your second mind. Our subconscious mind contains such power and complexity that it literally staggers the imagination. In order to understand how the conscious and subconscious minds work together as a team to create your reality, let me again use an analogy.</p>
+          <div class="col-md-3 col-md-offset-1 mb-40">
+            <div class="process-tabs tabs">
+              <ul class="tabs__list">
+                <li class="process-tabs__item tabs__item active">
+                  <a href="#tab-1" class="process-tabs__link tabs__link">
+                    Kupa Tedavisi-Hacamat
+                  </a>
+                </li>
+                <li class="process-tabs__item tabs__item">
+                  <a href="#tab-2" class="process-tabs__link tabs__link">
+                    Tıbbi sülük Tedavisi
+                  </a>
+                </li>
+                <li class="process-tabs__item tabs__item">
+                  <a href="#tab-3" class="process-tabs__link tabs__link">
+                      Tıbbi Aromaterapi
+                  </a>
+                </li>
+              </ul>
             </div>
           </div> <!-- end col -->
 
-          <div class="col-sm-6">
-            <div class="progress mt-50">
+          <div class="col-md-6 col-md-offset-1">
+            <div class="process-tabs__content tabs__content">
 
-              <h6 class="progress__title">Design <span class="progress__percent">100%</span></h6>
-              <div class="progress__base">
-                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress__bar" role="progressbar">
-                  <span class="sr-only">100% Complete</span>
-                </div>
-              </div>
+              <div class="tabs__content__pane active" id="tab-1">
 
-              <h6 class="progress__title">Html <span class="progress__percent">70%</span></h6>
-              <div class="progress__base">
-                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress__bar" role="progressbar">
-                  <span class="sr-only">70% Complete</span>
-                </div>
-              </div>
+                <h4 class="process-tabs__content__title nocaps">Kupa Tedavisi-Hacamat</h4>
+                <p class="process-tabs__content__text lead">
+                  Kupa Tedavisi nedir?
 
-              <h6 class="progress__title">Css <span class="progress__percent">90%</span></h6>
-              <div class="progress__base">
-                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" class="progress__bar" role="progressbar">
-                  <span class="sr-only">90% Complete</span>
-                </div>
-              </div>
+                  Kan dolaşımını arttırmak ve kas spazmını ortadan kaldırmak için vücudun belirli noktalarında bölgesel vakum yapılarak uygulanan kolay, güvenilir ve etkili bir tedavi yöntemidir. Kuru ve yaş kupa olarak ikiye ayrılmakta,  yüzeysel cilt kesikleri oluşturulması yolu ile, toksin içeren kanın alındığı zaman yaş kupa, ya da hacamat olarak adlandırılmaktadır.                </p>
 
-              <h6 class="progress__title">jQuery <span class="progress__percent">90%</span></h6>
-              <div class="progress__base" id="animated-skills">
-                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" class="progress__bar" role="progressbar">
-                  <span class="sr-only">90% Complete</span>
-                </div>
-              </div>
+                <p class="process-tabs__content__text lead">
+                  ----
+              </div> <!-- end pane -->
 
-            </div>
-          </div> <!-- end col -->   
 
-        </div>
-      </div>
-    </section> <!-- end about / progress bars -->
+              <div class="tabs__content__pane" id="tab-2">
 
-    <!-- Feature 3 -->
-    <section class="section-wrap bg-dark pt-140">
-      <div class="container">
-        <div class="row">
+                <h4 class="process-tabs__content__title nocaps">Tıbbi Sülük Tedavisi</h4>
+                <p class="process-tabs__content__text lead">
+                  Hirudoterapi Nedir?
 
-          <div class="col-md-6">
-            <div class="feature-img text-center">
-              <img src="img/promo/ipad.png" alt="">
-            </div>
-          </div> <!-- end col -->
+                  Hirudoterapi, tıbbi sülüğün insan vücudundaki gerekli bölgelere yapıştırılmasıyla 100`e yakın çeşitli enzimin insan dokusuna verilmesini sağlayan, tıbbın en eski tedavi yöntemlerinden birisidir.                </p>
 
-          <div class="col-md-6">
-            <div class="feature-3__list mt-80">
+                <p class="process-tabs__content__text lead">
+                  ----             
+               </p>
 
-              <div class="feature-3">
-                <a href="#" class="feature-3__icon-holder hi-icon">
-                  <i class="feature-3__icon icon icon-trophy"></i>
-                </a>
-                <div class="feature-3__body">
-                  <h4 class="feature-3__title">Endless Possibilities</h4>
-                  <p class="feature-3__text">Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>
-                </div>
-              </div>
+              </div> <!-- end pane -->
 
-              <div class="feature-3">
-                <a href="#" class="feature-3__icon-holder hi-icon">
-                  <i class="feature-3__icon icon icon-magnifying-glass"></i>
-                </a>
-                <div class="feature-3__body">
-                  <h4 class="feature-3__title">SEO Optimized</h4>
-                  <p class="feature-3__text">Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>
-                </div>
-              </div>
 
-              <div class="feature-3">
-                <a href="#" class="feature-3__icon-holder hi-icon">
-                  <i class="feature-3__icon icon icon-flag"></i>
-                </a>
-                <div class="feature-3__body">
-                  <h4 class="feature-3__title">Built with best UX</h4>
-                  <p class="feature-3__text">Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>
-                </div>
-              </div>
+              <div class="tabs__content__pane" id="tab-3">
 
-              <div class="feature-3">
-                <a href="#" class="feature-3__icon-holder hi-icon">
-                  <i class="feature-3__icon icon icon-layers"></i>
-                </a>
-                <div class="feature-3__body">
-                  <h4 class="feature-3__title">Organized Sass</h4>
-                  <p class="feature-3__text">Our web design team will spend time with our digital marketing team to ensure the core principles of effective websites.</p>
-                </div>
-              </div>
+                <h4 class="process-tabs__content__title nocaps">Tıbbi Aromaterapi</h4>
+                <p class="process-tabs__content__text lead">
+                    Aromaterapi; bitkilerden elde edilen doğal aromatik yağların, psikolojik ve kronikleşmiş sağlık sorunlarını gidermede destekleyici olarak veya sağlığın korunmasında kullanımını ele alır.
+                    Aromaterapi; bitkilerin uçucu yağlarını kullanarak terapi ve bütünsel tedavi sağlama tekniğidir. Her ne kadar aroma dediğimizde, inhalasyonla uçucu yağlardan faydalanmak algılansa da, Aromaterapide uçucu yağları sabit yağlarda seyrelterek cilt üzerine uygulamalar da yapıyoruz.
+                    Her bir aromatik bitkide bulunan uçucu yağ özü onlarca hatta yüzlerce organik aktif bileşen taşır ve bunların hepsi insan vücudunda çok faydalı etkilere sahiptir. 
+                <p class="process-tabs__content__text lead">
+                   <h2>Kullandığımız sağlık sorunları: </h2> 
+                    -Bağışıklık sistemini güçlendirmek,
+                    -Cilt sorunları: akne, kırışıklık, sellülit, anti-aging
+                    -Psikiatrik sorunlar,...                </p>
 
-            </div>
-          </div> <!-- end col -->   
+              </div> <!-- end pane -->
+
+            </div>            
+          </div>
 
         </div>
       </div>
-    </section> <!-- end feature 3 -->
+    </section> <!-- process tabs -->
 
     <!-- Featured Works -->
-    <section class="section-wrap pb-0" id="portfolio">
+    <section class="section-wrap" id="portfolio">
       <div class="container-fluid">
 
         <div class="heading-row text-center">
-          <span class="subheading">Best Projects</span>
-          <h2 class="heading">Featured Works</h2>
+          <span class="subheading">New Projects</span>
+          <h2 class="heading">our best works</h2>
         </div>
 
         <div class="row">
-          <div id="owl-featured-works" class="owl-carousel owl-theme owl-featured-works owl-featured-works--grab">
-            <div class="project project--hover-1">
+          <div id="owl-featured-works-4" class="owl-carousel owl-theme owl-featured-works dark-dots">
+
+            <a href="portfolio-single.html" class="project project--hover-3">
               <img src="img/portfolio/onepage/1.jpg" alt="" class="project__img">
               <div class="project__overlay">
-                <div class="project__icons">
-                  <a href="http://vimeo.com/19270640" class="lightbox-video"><i class="fa fa-search"></i></a>
-                  <a href="portfolio-single.html"><i class="fa fa-link"></i></a>
-                </div>
                 <div class="project__description">
-                  <h3 class="project__title"><a href="portfolio-single.html">Branding Mockup</a></h3>
-                  <span class="project__category"><a href="portfolio-single.html">Mockups</a></span>
+                  <h3 class="project__title">Branding Mockup</h3>
+                  <span class="project__category">Mockups</span>
                 </div>
               </div>
-            </div> <!-- end project -->
+            </a> <!-- end project -->
 
-            <div class="project project--hover-1">
+            <a href="portfolio-single.html" class="project project--hover-3">
               <img src="img/portfolio/onepage/2.jpg" alt="" class="project__img">
               <div class="project__overlay">
-                <div class="project__icons">
-                  <a href="https://www.youtube.com/watch?v=Scxs7L0vhZ4?autoplay=1" class="lightbox-video"><i class="fa fa-search"></i></a>
-                  <a href="portfolio-single.html"><i class="fa fa-link"></i></a>
-                </div>
                 <div class="project__description">
-                  <h3 class="project__title"><a href="portfolio-single.html">Poster Frame PSD</a></h3>
-                  <span class="project__category"><a href="portfolio-single.html">Mockups</a></span>
+                  <h3 class="project__title">Poster Frame PSD</h3>
+                  <span class="project__category">Mockups</span>
                 </div>
               </div>
-            </div> <!-- end project -->
+            </a> <!-- end project -->
 
-            <div class="project project--hover-1">
+            <a href="portfolio-single.html" class="project project--hover-3">
               <img src="img/portfolio/onepage/3.jpg" alt="" class="project__img">
               <div class="project__overlay">
-                <div class="project__icons">
-                  <a href="img/portfolio/onepage/3_big.jpg" class="lightbox-img"><i class="fa fa-search"></i></a>
-                  <a href="portfolio-single.html"><i class="fa fa-link"></i></a>
-                </div>
                 <div class="project__description">
-                  <h3 class="project__title"><a href="portfolio-single.html">Logo Mockup</a></h3>
-                  <span class="project__category"><a href="portfolio-single.html">Mockups</a></span>
+                  <h3 class="project__title">Logo Mockup</h3>
+                  <span class="project__category">Mockups</span>
                 </div>
               </div>
-            </div> <!-- end project -->
+            </a> <!-- end project -->
 
-            <div class="project project--hover-1">
+            <a href="portfolio-single.html" class="project project--hover-3">
               <img src="img/portfolio/onepage/4.jpg" alt="" class="project__img">
               <div class="project__overlay">
-                <div class="project__icons">
-                  <a href="img/portfolio/onepage/4_big.jpg" class="lightbox-img"><i class="fa fa-search"></i></a>
-                  <a href="portfolio-single.html"><i class="fa fa-link"></i></a>
-                </div>
                 <div class="project__description">
-                  <h3 class="project__title"><a href="portfolio-single.html">Creative Branding</a></h3>
-                  <span class="project__category"><a href="portfolio-single.html">Branding</a></span>
+                  <h3 class="project__title">Creative Branding</h3>
+                  <span class="project__category">Branding</span>
                 </div>
               </div>
-            </div> <!-- end project -->
+            </a> <!-- end project -->
 
-            <div class="project project--hover-1">
+            <a href="portfolio-single.html" class="project project--hover-3">
               <img src="img/portfolio/onepage/5.jpg" alt="" class="project__img">
               <div class="project__overlay">
-                <div class="project__icons">
-                  <a href="img/portfolio/onepage/5_big.jpg" class="lightbox-img"><i class="fa fa-search"></i></a>
-                  <a href="portfolio-single.html"><i class="fa fa-link"></i></a>
-                </div>
                 <div class="project__description">
-                  <h3 class="project__title"><a href="portfolio-single.html">Awesome Sweaters</a></h3>
-                  <span class="project__category"><a href="portfolio-single.html">Mockups</a></span>
+                  <h3 class="project__title">Awesome Sweaters</h3>
+                  <span class="project__category">Mockups</span>
                 </div>
               </div>
-            </div> <!-- end project -->
+            </a> <!-- end project -->
 
-            <div class="project project--hover-1">
+            <a href="portfolio-single.html" class="project project--hover-3">
               <img src="img/portfolio/onepage/6.jpg" alt="" class="project__img">
               <div class="project__overlay">
-                <div class="project__icons">
-                  <a href="img/portfolio/onepage/6_big.jpg" class="lightbox-img"><i class="fa fa-search"></i></a>
-                  <a href="portfolio-single.html"><i class="fa fa-link"></i></a>
-                </div>
                 <div class="project__description">
-                  <h3 class="project__title"><a href="portfolio-single.html">Magazine Cover Design</a></h3>
-                  <span class="project__category"><a href="portfolio-single.html">Print</a></span>
+                  <h3 class="project__title">Magazine Cover Design</h3>
+                  <span class="project__category">Print</span>
                 </div>
               </div>
-            </div> <!-- end project -->
+            </a> <!-- end project -->
 
-            <div class="project project--hover-1">
+            <a href="portfolio-single.html" class="project project--hover-3">
               <img src="img/portfolio/onepage/7.jpg" alt="" class="project__img">
               <div class="project__overlay">
-                <div class="project__icons">
-                  <a href="img/portfolio/onepage/7_big.jpg" class="lightbox-img"><i class="fa fa-search"></i></a>
-                  <a href="portfolio-single.html"><i class="fa fa-link"></i></a>
-                </div>
                 <div class="project__description">
-                  <h3 class="project__title"><a href="portfolio-single.html">Cartoon Cover</a></h3>
-                  <span class="project__category"><a href="portfolio-single.html">Branding</a></span>
+                  <h3 class="project__title">Cartoon Cover</h3>
+                  <span class="project__category">Branding</span>
                 </div>
               </div>
-            </div> <!-- end project -->
+            </a> <!-- end project -->
 
-            <div class="project project--hover-1">
+            <a href="portfolio-single.html" class="project project--hover-3">
               <img src="img/portfolio/onepage/8.jpg" alt="" class="project__img">
               <div class="project__overlay">
-                <div class="project__icons">
-                  <a href="img/portfolio/onepage/8_big.jpg" class="lightbox-img"><i class="fa fa-search"></i></a>
-                  <a href="portfolio-single.html"><i class="fa fa-link"></i></a>
-                </div>
                 <div class="project__description">
-                  <h3 class="project__title"><a href="portfolio-single.html">Paper Bag PSD</a></h3>
-                  <span class="project__category"><a href="portfolio-single.html">Mockups</a></span>
+                  <h3 class="project__title">Paper Bag PSD</h3>
+                  <span class="project__category">Mockups</span>
                 </div>
               </div>
-            </div> <!-- end project -->
+            </a> <!-- end project -->
 
 
           </div> <!-- end slider -->
@@ -750,214 +504,97 @@
     </section> <!-- end featured works -->
 
     <!-- Call to Action -->
-    <section class="section-wrap call-to-action">
-      <div class="container text-center">     
-        <h2 class="call-to-action__title nocaps">Are you ready to enjoy? Grab this Perfect Theme now!</h2>
-        <div class="mt-40">
-          <a href="#" class="btn btn-lg btn-color btn-icon">
-            <span>Purchase Now</span>
-            <i class="fa fa-angle-right"></i>             
-          </a>
+    <section class="section-wrap section-wrap--md call-to-action bg-light">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="call-to-action__title call-to-action__title--lg nocaps">Tedavi Yöntemlerimiz</h2>
+            <p class="call-to-action__text lead">
+                Tanı<span class="call-to-action__dot">.</span>  Teşhis<span class="call-to-action__dot"           
+            ></p>
+          </div>
         </div>
       </div>
     </section> <!-- end call to action -->
 
-    <!-- Testimonials -->
-    <section class="section-wrap white-text" style="background-image: url(img/sections/testimonials_bg.jpg)">
-
-      <div class="heading-row mb-40 text-center">
-        <h2 class="heading">Happy Clients</h2>
-      </div>
-
-      <div id="owl-testimonials" class="owl-carousel owl-theme text-center">
-
-        <div class="testimonial container">
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <p class="testimonial__text">I’am amazed, I should say thank you so much for your awesome template. Design is so good and neat, every detail has been taken care these team are realy amazing and talented! I will work only with canna agency.</p>
-              <span class="testimonial__author">John C. Marshall / Art Director</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial container">
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <p class="testimonial__text">I’am amazed, I should say thank you so much for your awesome template. Design is so good and neat, every detail has been taken care these team are realy amazing and talented! I will work only with canna agency.</p>
-              <span class="testimonial__author">Mick Thompson / Slipknot Guitarist</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial container">
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <p class="testimonial__text">I’am amazed, I should say thank you so much for your awesome template. Design is so good and neat, every detail has been taken care these team are realy amazing and talented! I will work only with canna agency.</p>
-              <span class="testimonial__author">Lindsey Simpson / Facebook</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section> <!-- end testimonials -->
-
-
-    <!-- Benefits -->
-    <section class="section-wrap bg-light pb-90">
-      <div class="container">
-
-        <div class="heading-row text-center">
-          <span class="subheading">Our Benefits</span>
-          <h2 class="heading">Why Choose Us</h2>
-        </div>
-
-        <div class="row items-grid">
-
-          <div class="col-lg-4 col-sm-4 col-sm-6 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <div class="feature-1 box-shadow">
-              <i class="feature__icon icon icon-mobile"></i>
-              <h3 class="feature__title">Fully Responsive</h3>
-              <p class="feature__text">This theme will save you a lot of time. Packed with amazing features and super flexible for any business.</p>
-            </div>
-          </div> <!-- end feature -->
-
-          <div class="col-lg-4 col-md-4 col-sm-6 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <div class="feature-1 box-shadow">
-              <i class="feature__icon icon icon-layers"></i>
-              <h3 class="feature__title">Perfect Coding</h3>
-              <p class="feature__text">This theme will save you a lot of time. Packed with amazing features and super flexible for any business.</p>
-            </div>
-          </div> <!-- end feature -->
-
-          <div class="col-lg-4 col-md-4 col-sm-6 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <div class="feature-1 box-shadow">
-              <i class="feature__icon icon icon-speedometer"></i>
-              <h3 class="feature__title">Fast Loading</h3>
-              <p class="feature__text">This theme will save you a lot of time. Packed with amazing features and super flexible for any business.</p>
-            </div>
-          </div> <!-- end feature -->
-
-          <div class="col-lg-4 col-md-4 col-sm-6 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <div class="feature-1 box-shadow">
-              <i class="feature__icon icon icon-strategy"></i>
-              <h3 class="feature__title">Amazing Features</h3>
-              <p class="feature__text">This theme will save you a lot of time. Packed with amazing features and super flexible for any business.</p>
-            </div>
-          </div> <!-- end feature -->
-
-          <div class="col-lg-4 col-md-4 col-sm-6 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <div class="feature-1 box-shadow">
-              <i class="feature__icon icon icon-lifesaver"></i>
-              <h3 class="feature__title">5 Stars Support</h3>
-              <p class="feature__text">This theme will save you a lot of time. Packed with amazing features and super flexible for any business.</p>
-            </div>
-          </div> <!-- end feature -->
-
-          <div class="col-lg-4 col-md-4 col-sm-6 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <div class="feature-1 box-shadow">
-              <i class="feature__icon icon icon-tools-2"></i>
-              <h3 class="feature__title">Easy to Customize</h3>
-              <p class="feature__text">This theme will save you a lot of time. Packed with amazing features and super flexible for any business.</p>
-            </div>
-          </div> <!-- end feature -->
+    <!-- Promo Services -->
+    <section class="split-section" id="services">
+      <div class="container-fluid">
+        <div class="row split-section__flex-parent">
           
+          <!-- Img -->
+          <div class="split-section__img-holder" style="background-image: url(img/team/1.jpg);">
+            <img src="img/team/1.jpg" alt="" class="split-section__img">
+          </div>
+
+          <!-- Box -->
+          <div class="split-section__box flex-parent">
+            <div class="split-section__inner">
+              <h3 class="split-section__title nocaps">Dr.Hüseyin KARACAASLAN</h3>
+              <p class="split-section__flex-parent ">
+                  -Geleneksel ve Tamamlayıcı Tıp Uygulamaları (Ozonterapi, Mezoterapi, Aromaterapi, Kupa tedavisi, Hirudoterapi), Klinik Mikrobiyoloji,
+                  -Akademik Dergi Editörlüğü, QMEL Tıp & Yayınevi
+                  -Medical Practitioner & Traditional and Complementary Medicine
+                  -(Ozone Therapy, Mesotherapy, Aromatherapy, Cup Therapy, Hirudoterapi), Clinical Microbiologist,
+                  -Medical Journal Editor
+                  -Address: Atakent , Istanbul/Turkey. 
+              </p>
+
+              <!-- Services -->
+              
+            </div>
+          </div> <!-- end box -->
+
         </div>
       </div>
-    </section> <!-- end benefits -->
+    </section> <!-- end promo services -->
+
 
     <!-- Contact -->
-    <section class="section-wrap white-text" id="contact" style="background-image: url(img/sections/contact_bg.jpg)">
+    <section class="section-wrap bg-violet white-text" id="contact">
       <div class="container">
 
         <div class="heading-row text-center">
-          <span class="subheading">Contact</span>
-          <h2 class="heading">Get in Touch</h2>
+          <span class="subheading">İletişim</span>
+          <h2 class="heading">Adresimiz</h2>
         </div>
 
         <div class="row">
 
-          <div class="col-md-8 col-md-offset-2">
-            <form id="contact-form" action="#" class="text-center">
+          <div class="col-md-3 col-md-offset-1 col-sm-4 text-sm-center mb-sm-40">
+            <h5 class="contact__title nocaps">Bize ulaşabileceğiniz telefon numarası</h5>
+            <a href="mailto:getsupport@canna.com" class="contact__item">abideva.info@gmail.com</a>
+            <a href="tel:+18005156223122" class="contact__item">0(536) 953 38 71</a>
+          </div> <!-- end col -->
 
-              <div class="row">
-                <div class="col-md-6 contact-name">
-                  <input name="name" id="name" type="text" placeholder="Name*">
-                </div>
-                <div class="col-md-6 contact-email">
-                  <input name="mail" id="mail" type="email" placeholder="E-mail*">
-                </div>
-              </div>
+          <div class="col-md-4 col-sm-4 text-center mb-sm-40">
+            <h5 class="contact__title nocaps">Biz Buradayız!!</h5>
+            <address class="contact__item">Atakent Mah. Alemdağ Cd. Hakan Apt. No:176/1<br>Ümraniye/İstanbul</address>            
+          </div> <!-- end col -->
 
-              <textarea name="comment" id="comment" placeholder="Message"></textarea>
-              <input type="submit" class="btn btn-lg btn-color btn-button" value="Send Message" id="submit-message">
-              <div id="msg" class="message"></div>
-            </form>
+          <div class="col-md-3 col-sm-4 text-right text-sm-center">
+            <h5 class="contact__title nocaps">Sosyal</h5>
+            <address class="contact__item">Sosyal Medya Hesaplarımızı takip ettiğiniz için teşekkür ederiz.</address>            
+            <div class="contact__socials socials socials--nobase">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/ab_i.deva/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
           </div> <!-- end col -->
 
         </div>
       </div>
     </section> <!-- end contact -->
 
-    <!-- Google Map -->
-    <div class="gmap-btn">Open Map</div>  
-    <div class="gmap gmap-hidden" id="google-map" data-address="V Tytana St, Manila, Philippines"></div>
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer__widgets">
-          <div class="row">
-
-            <div class="col-md-4">
-              <div class="widget widget__get-in-touch">
-                <h5 class="widget__title nocaps">Get in Touch</h5>
-                <p class="widget__get-in-touch__paragraph">Phone: + 1 888 1554 456 123</p>
-                <p class="widget__get-in-touch__paragraph">Email: <a href="mailto:cannasupport@gmail.com">cannasupport@gmail.com</a></p>
-                <p class="widget__get-in-touch__paragraph">Fax: +63 918 4084 694</p>
-              </div>
-            </div> <!-- end stay in touch -->
-
-            <div class="col-md-4">
-              <div class="widget widget__footer-logo text-center local-scroll">
-                <a href="#home" class="widget__footer-logo__link">
-                  <img src="img/logo_dark.png" alt="">
-                </a>
-                <p class="mb-0">Canna Onepage is a very slick and clean template. Creating an awesome website with this Theme is easy than you can imagine.</p>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="widget footer-address-widget text-right">
-                <h5 class="widget__title nocaps">Location</h5>
-                <p class="footer-address">Canna inc.<br>Philippines, Talay st. 65,<br>PO Box 6200</p>
-              </div>
-            </div> <!-- end address -->
-
-          </div>
-        </div>
-      </div>
-
       <div class="footer-bottom">
         <div class="container">
-          <div class="row">
-
-            <div class="col-sm-6 col-xs-12 text-sm-center">
-              <span class="copyright">
-                &copy; 2017 Canna Theme  |  Made by <a href="https://deothemes.com">DeoThemes</a>
-              </span>
-            </div>
-              
-            <div class="col-sm-4 col-sm-offset-2 col-xs-12 text-right text-sm-center">
-              <div class="socials socials--nobase footer__socials clearfix">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>                  
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-vimeo"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-              </div>
-            </div>
-
+          <div class="text-center">
+            <span class="copyright">
+              &copy; 2019 copyright |  Made by <a href="">53Studios</a>
+            </span>
           </div>
         </div>
       </div> <!-- end bottom footer -->
@@ -972,75 +609,12 @@
   <!-- jQuery Scripts -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
-  <script type="text/javascript" src="js/gmap3.js"></script>
   <script type="text/javascript" src="js/plugins.js"></script>
   <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
   <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
   <script type="text/javascript" src="js/rev-slider.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
 
-
-  <!-- Google Map -->
-  <script type="text/javascript">
-    $(document).ready( function(){
-
-      function initMap() {
-
-        var gmapDiv = $("#google-map");
-        var gmapMarker = gmapDiv.attr("data-address");
-
-        gmapDiv.gmap3({
-          zoom: 16,
-          address: gmapMarker,
-          oomControl: true,
-          navigationControl: true,
-          scrollwheel: false,
-          styles: [
-            {
-            "featureType":"all",
-            "elementType":"all",
-              "stylers":[
-                { "saturation":"0" }
-              ]
-          }]
-        })
-        .marker({
-          address: gmapMarker,
-          icon: "img/map_pin.png"
-        })
-        .infowindow({
-          content: "V Tytana St, Manila, Philippines"
-        })
-        .then(function (infowindow) {
-          var map = this.get(0);
-          var marker = this.get(1);
-          marker.addListener('click', function() {
-            infowindow.open(map, marker);
-          });
-        });
-      }
-
-
-      // Map Button
-      $(".gmap-btn").on("click", function() {
-
-        $(".gmap").slideToggle();
-
-        if ($(this).text() == "Close Map")
-         $(this).text("Open Map")
-        else
-         $(this).text("Close Map");
-      });
-
-      $(".gmap-btn").one("click", function() {
-        setTimeout(function(){
-          initMap();
-        }, 500);
-      });
-
-    });
-  </script>
 
   <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
   <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
