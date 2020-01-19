@@ -25,6 +25,29 @@
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.img-center { 
+  display:block;
+  margin:0 auto;
+}
+</style>
+
 </head>
 
 <body data-spy="scroll" data-offset="60" data-target=".nav__holder" id="home">
@@ -75,6 +98,8 @@
               </li>                         
               <li>
                 <a href="#services">Doktorumuz</a>
+              <li>
+                <a href="#documents">Belgelerimiz</a>
               </li>
               <li>
                 <a href="#contact">İletişim</a>
@@ -269,7 +294,7 @@
               
               <div class="col-md-4 promo-slider__info">
                 <h3 class="promo-slider__title">Doktor kontrolünde tedavi</h3>
-                <p class="mb-30">Tamamlayıcı tedavinizi uzman doktorumuz gözleminde kişiye özel tedaviler ile size özel olarak uygulanmaktadır.Kurumumuz siz hastalarımıza en iyi şekilde hizmet etmeyi amaçlar</p> 
+                <p class="mb-30">Tamamlayıcı tedaviniz Sağlık Bakanlığı onaylı doktorumuz kontrolünde tıbbi ve sünnete uygun olarak uygulanmaktadır.Kurumumuz siz hastalarımıza en iyi şekilde hizmet etmeyi amaçlar</p> 
                 <div class="owl-custom-navigation mt-40">
                   <a class="owl-custom-navigation__prev"><i class="fa fa-angle-left"></i></a>
                   <a class="owl-custom-navigation__next"><i class="fa fa-angle-right"></i></a>
@@ -534,17 +559,24 @@
     </section> <!-- end featured works -->
 
     <!-- Call to Action -->
-    <section class="section-wrap section-wrap--md call-to-action bg-light">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h2 class="call-to-action__title call-to-action__title--lg nocaps">Tedavi Yöntemlerimiz</h2>
-            <p class="call-to-action__text lead">
-                Tanı<span class="call-to-action__dot">.</span>  Teşhis<span class="call-to-action__dot"           
-            ></p>
-          </div>
+    <section class="section-wrap" id="documents">
+      <div class="container-fluid">
+
+        <div class="heading-row text-center">
+          <span class="subheading">Belgelerimiz</span>
         </div>
-      </div>
+
+        <div class="row">
+         <div class="column">
+              <img class="img-center" src="img\Klinik\Belge1.JPEG" alt="" style="width:50%">
+        </div>
+         <div class="column">
+             <img class="img-center" src="img\Klinik\Belge2.JPEG" alt="" style="width:50%">
+         </div>
+        </div>
+</div>
+
+        </div>
     </section> <!-- end call to action -->
 
     <!-- Promo Services -->
