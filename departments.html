@@ -255,7 +255,7 @@
     <!-- Department Area Starts -->
 
         <!-- Belgelerimiz Area Starts -->
-    <section class="department-area section-padding4">
+    <!-- <section class="department-area section-padding4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
@@ -296,7 +296,18 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <div id="wrapper">
+        <div id="outer">
+          <div class="itemwrapper">
+            <img src="assets/images/Klinik/belge1.jpg" alt="belge1" />
+          </div>
+          <div class="itemwrapper">
+            <img src="assets/images/Klinik/belge2.jpg" alt="belge2" />
+          </div>
+        </div>
+      </div>
     <!-- Belgelerimiz Area Starts -->
 
 
@@ -394,7 +405,27 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="assets/js/vendor/superfish.min.js"></script>
     <script src="assets/js/main.js"></script>
 
-
+<style>
+#wrapper {
+  max-width: 1050px;
+  margin: 60px auto 60px auto;
+  background-color: #DDD
+}
+#outer {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.itemwrapper {
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
 
 </body>
 </html>
