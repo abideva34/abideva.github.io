@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
-  <loc>http://www.abideva.com/index.html</loc>
-  <priority>0.5</priority>
-  <changefreq>weekly</changefreq>
-  <lastmod>2020-02-01</lastmod>
+  <loc>http://abideva.com/index.html</loc>
+  <lastmod>2020-03-17</lastmod>
 </url>
 <url>
-  <loc>http://www.abideva.com/departments.html</loc>
-  <priority>0.5</priority>
-  <changefreq>weekly</changefreq>
-  <lastmod>2020-02-01</lastmod>
+  <loc>http://abideva.com/departments.html</loc>
+  <lastmod>2020-03-17</lastmod>
 </url>
 <url>
-  <loc>http://www.abideva.com/contact.html</loc>
-  <priority>0.5</priority>
-  <changefreq>weekly</changefreq>
-  <lastmod>2020-02-01</lastmod>
+  <loc>http://abideva.com/info.html</loc>
+  <lastmod>2020-03-17</lastmod>
+</url>
+<url>
+  <loc>http://abideva.com/contact.html</loc>
+  <lastmod>2020-03-17</lastmod>
 </url>
 </urlset>
